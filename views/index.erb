@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Articles</title>
+    <link rel="stylesheet" href="/home.css">
+  </head>
+
+  <body>
+    <h2>Submitted Articles:</h2>
+
+    <ul>
+    <% articles.each do |info| %>
+      <li><a href="<%= info["url"] %>" target="_blank"><%= info["title"] %></a>
+        <br />
+        <%= info["url"] %>
+        <blockquote class="article_description">
+        <p><%= info["description"] %></p>
+        </blockquote>
+      </li>
+    <% end %>
+    </ul>
+
+    <p><a href="/articles/new" class="undecorated">Submit New Article</a></p>
+
+  </body>
+</html>

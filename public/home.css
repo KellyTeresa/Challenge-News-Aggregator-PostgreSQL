@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFD1AA;
+  font-size: 18px;
+  color:#552700;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-family: Cochin, serif;
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #450026;
+}
+
+a {
+  color: #805C15;
+  font-size: 22px;
+}
+
+a:visited {
+  color: #801515;
+}
+
+a:hover, :focus {
+  color: #266;
+}
+
+.undecorated {
+  text-decoration: none;
+}
+
+.article_description {
+  font-size: 18px;
+  margin-top:0px;
+  font-family: Arial, sans-serif;
+  color: #550200;
+  width: 450px;
+}
+
+blockquote {
+  background: #AA3C39;
+  border-left: 10px solid #801815;
+  margin: 0;
+  padding: 1em 10px;
+  width: 500px;
+}
+
+blockquote:before {
+  color: #FFACAA;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+  font-size: 16px;
+}
+
+.margined {
+  background: #CE8AAF;
+	background: -moz-linear-gradient(top,#CE8AAF 0%,#AC5685 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#CE8AAF),color-stop(100%,#AC5685));
+	background: -webkit-linear-gradient(top,#CE8AAF 0%,#AC5685 100%);
+	background: -o-linear-gradient(top,#CE8AAF 0%,#AC5685 100%);
+	background: -ms-linear-gradient(top,#CE8AAF 0%,#AC5685 100%);
+	background: linear-gradient(top,#CE8AAF 0%,#AC5685 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#CE8AAF',endColorstr='#AC5685',GradientType=0);
+	padding:8px 18px;
+	color:#450026;
+	font-family:'Helvetica Neue',sans-serif;
+	font-size:16px;
+	border-radius:48px;
+	-moz-border-radius:48px;
+	-webkit-border-radius:48px;
+	border:1px solid #450026
+}
+
+input {
+  margin-bottom: 1em;
+}

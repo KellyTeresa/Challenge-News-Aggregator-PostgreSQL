@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Submit Article</title>
+    <link rel="stylesheet" href="/home.css">
+  </head>
+
+  <body>
+    <h2>Submit a New Article:</h2>
+
+    <form action="/articles/new" method="post">
+      <label for="article_name">Article Title:</label><br />
+      <input type="text" id="article_name" name="title" placeholder="U Mad (Max) Bro?" size="60" pattern=".{5,}" required title="5 Characters Minimum" value="<%=title %>">
+      <br />
+      <label for="article_url">URL:</label><br />
+      <input type="url" id="article_url" name="url" placeholder="http://www.anarchogeekreview.com/movies/u-mad-max-bro" size="60" required title="Begin your URL with 'http://'" value="<%=url %>">
+      <br />
+      <label for="article_description">Description:</label>
+      <br />
+      <input type="text" size="60" id="article_description" name="description" placeholder="Review of an MRA's review of Mad Max" pattern=".{20,}" required title="20 Characters Minimum" value="<%= description %>">
+      <br />
+      <input type="submit" value="Submit Article" class="margined">
+    </form>
+
+    <p><a href="/articles" class="undecorated">Nevermind, I don't want to submit anything! Take me back to the existing articles.</a></p>
+
+  </body>
+</html>
